@@ -11,6 +11,8 @@ section {
   width: 43vw;
   padding: 2vw;
   margin: 2vw;
+  overflow-y: scroll;
+  height: 80vh;
 }
 h1 {
   font-weight: bolder;
@@ -19,9 +21,11 @@ h1 {
   padding: 5px;
   border-radius: 20px;
   text-align: center;
-  width: 40vw;
+  width: 42vw;
   text-transform: uppercase;
   font-family: "Courier New", Courier, monospace;
+  position: fixed;
+  top: 0;
 }
 #profile {
   margin-left: calc((41vw - 200px) / 2);
@@ -61,4 +65,23 @@ button > a {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-transform: lowercase;
+}
+#contact {
+  line-height: 30px;
+}
+#facebook,
+#twitter,
+#email {
+  font-weight: bolder;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+#facebook {
+  color: blue;
+}
+#twitter {
+  color: lightblue;
+}
+#email {
+  color: red;
 }
