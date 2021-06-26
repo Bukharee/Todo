@@ -1,3 +1,1 @@
-let todo = {
-    
-}
+let todo = [];
