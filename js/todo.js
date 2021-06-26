@@ -1,1 +1,1 @@
-let todo = [];
+let todo = [{"first":"this is the example of a todo"}, {"second": "second example"}];
