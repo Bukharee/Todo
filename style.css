@@ -1,5 +1,5 @@
 /* body {
-  background: linear-gradient(white 50%, teal 50%);
+  background: linear-gradient(white 50%, darkorange 50%);
 } */
 aside {
   float: left;
@@ -12,12 +12,12 @@ section {
   padding: 2vw;
   margin: 2vw;
   overflow-y: auto;
-  height: 80vh;
+  height: 85vh;
 }
 h1 {
   font-weight: bolder;
   color: white;
-  background: teal;
+  background: darkorange;
   padding: 5px;
   border-radius: 20px;
   text-align: center;
@@ -26,10 +26,13 @@ h1 {
   font-family: "Courier New", Courier, monospace;
   position: fixed;
   top: 0;
+  margin-top: 2px;
+  margin-bottom: 0;
+  margin-left: -6px;
 }
 #profile {
   margin-left: calc((41vw - 200px) / 2);
-  border: 2px solid teal;
+  border: 2px solid darkorange;
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -41,9 +44,10 @@ h1 {
 }
 button {
   padding: 5px;
-  background: teal;
+  background: darkorange;
   color: white;
   margin: auto;
+  border: 1px solid darkorange;
 }
 button > a {
   text-decoration: none;
@@ -57,7 +61,7 @@ button > a {
   display: inline;
 }
 .todo {
-  background: rgba(0, 128, 128, 0.3);
+  background: rgba(225, 140, 0, 0.3);
   padding: 10px;
   width: 40vw;
   color: black;
@@ -65,6 +69,9 @@ button > a {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-transform: lowercase;
+}
+.todo:first-of-type {
+  margin-top: 0;
 }
 #contact {
   line-height: 30px;
@@ -84,4 +91,45 @@ button > a {
 }
 #email {
   color: red;
+}
+section::-webkit-scrollbar {
+  background: white;
+  border: 1px solid darkorange;
+}
+section::-webkit-scrollbar-button {
+  background: darkorange;
+  color: white;
+}
+
+section::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 50px;
+}
+
+/* media queries go here */
+
+@media screen and (max-width: 650px) {
+  aside,
+  section {
+    float: unset;
+  }
+  aside {
+    width: 90vw;
+  }
+  section {
+    width: 90vw;
+  }
+  h1,
+  .todo {
+    width: 85vw;
+  }
+  h1 {
+    position: unset;
+  }
+  #profile {
+    margin-left: calc((90vw - 200px) / 2);
+  }
+  #btns {
+    margin-left: calc((90vw - 300px) / 2);
+  }
 }
